@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kits_browser",
+  "version": "${version}",
+  "name": "Kits browser",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kits_browser/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "ru.stepan1411.kits_browser.client.Kits_browserDataGenerator"
+    ],
+    "client": [
+      "ru.stepan1411.kits_browser.client.Kits_browserClient"
+    ],
+    "main": [
+      "ru.stepan1411.kits_browser.Kits_browser"
+    ]
+  },
+  "mixins": [
+    "kits_browser.mixins.json",
+    {
+      "config": "kits_browser.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "pvp_bot": "*"
+  }
+}

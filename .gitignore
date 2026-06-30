@@ -1,0 +1,9 @@
+.gradle
+backend
+run
+/build/classes
+/build/devlibs
+/build/loom-cache
+/build/reports
+/build/resources
+/build/tmp
